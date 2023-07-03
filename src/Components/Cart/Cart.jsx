@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { CartContext } from "../../CartContext/CartContext";
 import "../../Styles/Cart.css";
+import { Link } from "react-router-dom";
 const Cart = () => {
   const { cartItems, removeFromCart, ClearCart } = useContext(CartContext);
   const handleRemove = (productId) => removeFromCart(productId);
@@ -19,7 +20,16 @@ const Cart = () => {
               <h4>{product.count} items</h4>{" "}
             </h1>
             {/* in cartContext conditionally checked */}
-            <button className="buy-button">Buy Now</button>
+            <Link to="/order">
+              {" "}
+              <button
+                className="buy-button"
+                onClick={() => handleRemove(product.id)}
+              >
+                Buy Now
+              </button>
+            </Link>
+
             <button
               className="remove-button"
               onClick={() => handleRemove(product.id)}
