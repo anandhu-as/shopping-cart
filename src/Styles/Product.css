@@ -40,7 +40,8 @@
 
 .products .card button {
   padding: 10px 15px;
-  background-color: #4aa371;
+ 
+  background-color: #427f96;
   color: #fff;
   font-size: 16px;
   border: none;
@@ -49,5 +50,5 @@
 }
 
 .products .card button:hover {
-  background-color: #f57c00;
+  background-color: #4aa371;
 }

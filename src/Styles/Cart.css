@@ -7,6 +7,7 @@
 .product-image {
   width: 200px;
   height: auto;
+  padding-left: 20px;
   margin-right: 10px;
 }
 
@@ -16,15 +17,17 @@
 }
 
 .remove-button {
-  background-color: red;
   color: white;
   border: none;
   width: 200px;
   height: 50px;
   border-radius: 5px;
   cursor: pointer;
+  margin-right: 200px;
+  text-align: center;
+  color: #111;
 }
-.clear-button{
+.clear-button {
   background-color: rgb(131, 205, 144);
   color: white;
   border: none;
@@ -34,4 +37,13 @@
   cursor: pointer;
   margin-left: 650px;
   margin-top: 20px;
+}
+.buy-button {
+  background-color: rgb(131, 205, 144);
+  color: white;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
 }
