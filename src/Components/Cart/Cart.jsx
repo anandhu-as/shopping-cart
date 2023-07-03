@@ -3,12 +3,13 @@ import { useContext } from "react";
 import { CartContext } from "../../CartContext/CartContext";
 import "../../Styles/Cart.css";
 const Cart = () => {
-  const { cartItems, removeFromCart } = useContext(CartContext);
+  const { cartItems, removeFromCart,ClearCart } = useContext(CartContext);
   const handleRemove = (productId) => {
     removeFromCart(productId);
   };
   return (
     <div>
+      <button className="clear-button" onClick={ClearCart}>ClearCart</button>
       {cartItems.map((product) => {
         return (
           <div key={product.id} className="product-container">

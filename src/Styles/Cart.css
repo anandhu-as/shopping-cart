@@ -24,3 +24,14 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.clear-button{
+  background-color: rgb(131, 205, 144);
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 620px;
+  margin-top: 20px;
+}
