@@ -8,15 +8,15 @@ import Order from "./Components/Order/Order";
 const App = () => {
   return (
     <>
-  <CartProvider>
-      <BrowserRouter>
-      <NavBar />
-        <Routes>
-          <Route path="/" element={<Shop />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/order" element={<Order/>}/>
-        </Routes>
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/order" element={<Order />} />
+          </Routes>
+        </BrowserRouter>
       </CartProvider>
     </>
   );
