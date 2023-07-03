@@ -13,6 +13,7 @@ const Product = ({ data }) => {
       <div className="card">
       <img src={data.productImage} alt="" />
         <h4>{data.productName}</h4>
+        <h3>$ {data.price}</h3>
         <button onClick={handleAdd}> Add</button>
       </div>
     </div>
