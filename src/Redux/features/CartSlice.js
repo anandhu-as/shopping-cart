@@ -4,7 +4,6 @@ const initialState = {
   cartItems: [],
   products: items,
   productCount: 0,
-  totalPrice: 0,
 };
 const CartSlice = createSlice({
   name: "cart",
@@ -23,7 +22,10 @@ const CartSlice = createSlice({
     },
     addToCart: (state, action) => {
       const { item } = action.payload;
-      state.cartItems = [...state.cartItems, item];
+      const sameId = state.cartItems.find(
+        (cartItem) => cartItem.id === item.id
+      );
+      sameId ? null : state.cartItems.push({ ...item });
       state.productCount = state.cartItems.length;
     },
   },

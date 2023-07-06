@@ -12,6 +12,10 @@
 
 .card img {
   width: 200px;
+  transition: 1s ease;
+}
+.card img:hover{
+  transform: scale(1.1);
 }
 .card h2 {
   font-size: 20px;

@@ -5,6 +5,13 @@ import { clearCart, removeItem } from "../../Redux/features/CartSlice";
 const Cart = () => {
   const dispatch = useDispatch();
   const { totalPrice, cartItems } = useSelector((state) => state.cart);
+  const totalAmount = () => {
+    let total = 0;
+    cartItems.forEach((item) => {
+      total = total + item.price;
+    });
+    return total;
+  };
   return (
     <>
       <div>
@@ -26,7 +33,7 @@ const Cart = () => {
       <button className="clear" onClick={() => dispatch(clearCart())}>
         ClearCart
       </button>
-      <h1>total $: {totalPrice}</h1>
+      <h1>total $:{totalAmount()} </h1>
     </>
   );
 };

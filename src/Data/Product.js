@@ -29,8 +29,8 @@ export const items = [
     id: 4,
     productName: "NordStrom Hoodies",
     price: 88,
-    productdesc:
-      "",
-    productImage: "https://n.nordstrommedia.com/id/sr3/55658d29-aaf1-4b21-a7ed-3d000f06f672.jpeg?h=365&w=240&dpr=2",
+    productdesc: "",
+    productImage:
+      "https://n.nordstrommedia.com/id/sr3/55658d29-aaf1-4b21-a7ed-3d000f06f672.jpeg?h=365&w=240&dpr=2",
   },
- ];
+];

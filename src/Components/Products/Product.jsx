@@ -13,7 +13,9 @@ const Product = () => {
             <img src={item.productImage} alt="" />
             <h2>{item.productName}</h2>
             <p> ${item.price}</p>
-            <button onClick={() => dispatch(addToCart({ item }))}>add</button>
+            <button onClick={() => dispatch(addToCart({ item, id: item.id }))}>
+              add
+            </button>
           </div>
         );
       })}
