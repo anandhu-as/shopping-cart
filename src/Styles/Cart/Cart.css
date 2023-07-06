@@ -1,0 +1,51 @@
+.product {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  text-align: center;
+  padding-left: 300px;
+}
+.product img {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  padding-top: 50px;
+}
+.product button {
+  width: 100px;
+  position: fixed;
+  height: 30px;
+  margin-top: 80px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  left: 700px;
+}
+.product h4 {
+  padding-top: 80px;
+  padding-left: 40px;
+}
+.product p {
+  padding-top: 80px;
+  padding-left: 40px;
+}
+.clear {
+  margin-left: 300px;
+  width: 150px;
+  margin-top: 50px;
+  background-color: rgb(82, 82, 112);
+  border: none;
+  color: #fff;
+  height: 30px;
+  cursor: pointer;
+  position: fixed;
+}
+h1 {
+  font-size: 20px;
+  position: fixed;
+  left: 530px;
+  padding-top: 50px;
+}
+a{
+  color: #fff;;
+}

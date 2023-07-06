@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #1a1c1d;
+  height: 900px;
+  position: fixed;
+  width: 200px;
+  color: #fff;
+  text-align: center;
+}
+.navbar h4 {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}

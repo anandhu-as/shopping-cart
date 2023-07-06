@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-top: 100px;
+}
+
+.card {
+  flex: 2;
+  margin-right: 10px;
+}
+
+.card img {
+  width: 200px;
+}
+.card h2 {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.card p {
+  padding-left: 60px;
+}
+.card button {
+  width: 120px;
+  border: none;
+
+  background-color: #6a658b;
+  color: #fff;
+  margin-left: 20px;
+  height: 30px;
+  cursor: pointer;
+}
