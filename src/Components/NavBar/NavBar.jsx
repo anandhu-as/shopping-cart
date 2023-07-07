@@ -22,6 +22,11 @@ const NavBar = () => {
           <i className="fa-solid fa-cart-shopping"></i> {productCount}
         </h4>
       </Link>
+      <Link>
+        <h4>
+          <i className="fa-solid fa-user"></i>
+        </h4>
+      </Link>
     </div>
   );
 };

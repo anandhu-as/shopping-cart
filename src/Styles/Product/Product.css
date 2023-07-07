@@ -1,20 +1,23 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 300px;
   padding-top: 100px;
 }
 
 .card {
-  flex: 2;
+  flex: 0 1 calc(25% - 10px);
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .card img {
   width: 200px;
   transition: 1s ease;
+  padding-top:80px;
 }
-.card img:hover{
+.card img:hover {
   transform: scale(1.1);
 }
 .card h2 {
@@ -27,7 +30,6 @@
 .card button {
   width: 120px;
   border: none;
-
   background-color: #6a658b;
   color: #fff;
   margin-left: 20px;

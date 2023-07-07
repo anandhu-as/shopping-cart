@@ -27,10 +27,38 @@ export const items = [
 
   {
     id: 4,
-    productName: "NordStrom Hoodies",
+    productName: "NordStrom Hood",
     price: 88,
     productdesc: "",
     productImage:
       "https://n.nordstrommedia.com/id/sr3/55658d29-aaf1-4b21-a7ed-3d000f06f672.jpeg?h=365&w=240&dpr=2",
   },
+  {
+    id: 5,
+    productName: "Men's T-Shirt",
+    price: 19.99,
+    productImage:
+      "https://5.imimg.com/data5/SELLER/Default/2021/10/ZW/ND/GB/140142552/whatsapp-image-2021-10-23-at-4-32-31-pm-1024x1024-500x500.jpg",
+  },
+  {
+    id: 6,
+    productName: "jeans levis",
+    price: 20,
+    productImage:
+      "https://www.levi.in/dw/image/v2/BBRC_PRD/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dw37eb3b39/images/hi-res/A05740030/A05740030_01_Front.jpg?sw=451&sh=600",
+  },
+  {
+    id: 7,
+    productName: "skirts sara",
+    price: 23,
+    productImage:
+      "https://i.pinimg.com/236x/32/15/c0/3215c071a67f5bd49a9b1bc8b549aaed.jpg",
+  },
+  {
+    id: 8,
+    productName: "Hoodies women",
+    price: 20,
+    productImage:
+      "https://media1.popsugar-assets.com/files/thumbor/9HtYS50ans4EOJlJk-tlKEqtqtM/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2022/06/09/982/n/1922564/5212168df89cecf2_netimgmEpdZj/i/Oversized-Hoodie-FP-Movement-At-My-Best-Sweat.webp",
+  }
 ];
