@@ -6,6 +6,7 @@ const NavBar = () => {
   const { productCount } = useSelector((state) => state.cart);
   return (
     <div className="navbar">
+      {/* Links */}
       <Link to="/">
         {" "}
         <h4>

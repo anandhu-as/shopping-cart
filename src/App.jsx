@@ -7,6 +7,7 @@ import Notification from "./Components/Notification/Notification";
 const App = () => {
   return (
     <div>
+      {/* Routes */}
       <BrowserRouter>
         <NavBar />
         <Routes>

@@ -36,7 +36,7 @@ export const items = [
   {
     id: 5,
     productName: "Men's T-Shirt",
-    price: 19,
+    price: 19.99,
     productImage:
       "https://5.imimg.com/data5/SELLER/Default/2021/10/ZW/ND/GB/140142552/whatsapp-image-2021-10-23-at-4-32-31-pm-1024x1024-500x500.jpg",
   },
@@ -45,7 +45,7 @@ export const items = [
     productName: "jeans levis",
     price: 20,
     productImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17kBBOk_zex3KIuSq7cpfI0TeH_mO_D91mguEXfr7V19dIoPQvmPzFs7aEzsXKGVK3Jk&usqp=CAU",
+      "https://lsco.scene7.com/is/image/lsco/Levis/clothing/477620000-side-pdp.jpg?$qv_desktop_bottoms$",
   },
   {
     id: 7,
@@ -60,5 +60,5 @@ export const items = [
     price: 20,
     productImage:
       "https://media1.popsugar-assets.com/files/thumbor/9HtYS50ans4EOJlJk-tlKEqtqtM/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2022/06/09/982/n/1922564/5212168df89cecf2_netimgmEpdZj/i/Oversized-Hoodie-FP-Movement-At-My-Best-Sweat.webp",
-  }
+  },
 ];
