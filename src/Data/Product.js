@@ -45,7 +45,7 @@ export const items = [
     productName: "jeans levis",
     price: 20,
     productImage:
-      "https://www.levi.in/dw/image/v2/BBRC_PRD/on/demandware.static/-/Sites-LeviMaster-Catalog/en_IN/dw37eb3b39/images/hi-res/A05740030/A05740030_01_Front.jpg?sw=451&sh=600",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT17kBBOk_zex3KIuSq7cpfI0TeH_mO_D91mguEXfr7V19dIoPQvmPzFs7aEzsXKGVK3Jk&usqp=CAU",
   },
   {
     id: 7,

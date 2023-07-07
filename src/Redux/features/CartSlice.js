@@ -18,7 +18,6 @@ const CartSlice = createSlice({
       const { id } = action.payload;
       state.cartItems = state.cartItems.filter((item) => item.id !== id);
       state.productCount = state.cartItems.length;
-      console.log(state.totalPrice);
     },
     addToCart: (state, action) => {
       const { item } = action.payload;

@@ -10,7 +10,7 @@ const Notification = () => {
       {cartItems.length == 0 && <h5>no notifications</h5>}
       {cartItems.map((item) => {
         return (
-          <div>
+          <div key={item.id}>
             <h5>{item.productName} added to cart</h5>
           </div>
         );
