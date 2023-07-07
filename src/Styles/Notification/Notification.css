@@ -1,0 +1,17 @@
+.message-container {
+  text-align: center;
+  padding-top: 200px;
+  margin-left: 100px;
+}
+.message-container h5 {
+  font-size: 20px;
+  color: #000;
+}
+.message-container a {
+  color: #6a658b;
+
+  font-size: 20px;
+}
+.message-container h4 {
+  margin-top: 100px;
+}

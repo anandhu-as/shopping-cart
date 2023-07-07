@@ -36,7 +36,7 @@ export const items = [
   {
     id: 5,
     productName: "Men's T-Shirt",
-    price: 19.99,
+    price: 19,
     productImage:
       "https://5.imimg.com/data5/SELLER/Default/2021/10/ZW/ND/GB/140142552/whatsapp-image-2021-10-23-at-4-32-31-pm-1024x1024-500x500.jpg",
   },

@@ -12,9 +12,9 @@ const NavBar = () => {
           <i className="fa fa-home" aria-hidden="true"></i>
         </h4>
       </Link>
-      <Link>
+      <Link to='/notifications'>
         <h4>
-          <i className="fa-solid fa-bell"></i>
+          <i className="fa-solid fa-bell"></i>  {productCount}
         </h4>
       </Link>
       <Link to="/cart">

@@ -4,7 +4,7 @@ import "../../Styles/Cart/Cart.css";
 import { clearCart, removeItem } from "../../Redux/features/CartSlice";
 const Cart = () => {
   const dispatch = useDispatch();
-  const {  cartItems } = useSelector((state) => state.cart);
+  const { cartItems } = useSelector((state) => state.cart);
   const totalAmount = () => {
     let total = 0;
     cartItems.forEach((item) => {
