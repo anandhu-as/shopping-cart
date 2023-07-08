@@ -3,9 +3,9 @@ import "../../Styles/NavBar/NavBar.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const NavBar = () => {
-  const { username   } = useSelector((state) => state.cart.username);
+  const { username } = useSelector((state) => state.cart.username);
   const { productCount } = useSelector((state) => state.cart);
- 
+
   return (
     <div className="navbar">
       {/* Links */}
