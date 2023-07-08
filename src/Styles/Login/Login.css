@@ -5,6 +5,7 @@
   padding-top: 70px;
   margin-left: 570px;
   text-align: center;
+  border-radius: 4px;
 }
 .login-container label {
   color: #fff;
@@ -17,7 +18,7 @@
   text-align: center;
   outline: none;
   height: 30px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .login-container button {

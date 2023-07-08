@@ -3,25 +3,22 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 300px;
-
 }
-
 .card {
   flex: 0 1 calc(25% - 10px);
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
 .card img {
-  width: 200px;
+  width: 180px;
   transition: 1s ease;
-  padding-top:80px;
+  padding-top: 80px;
 }
 .card img:hover {
   transform: scale(1.1);
 }
 .card h2 {
-  font-size:15px;
+  font-size: 15px;
   padding-left: 10px;
 }
 .card p {
