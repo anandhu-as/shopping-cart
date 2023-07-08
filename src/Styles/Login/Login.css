@@ -15,7 +15,8 @@
   width: 200px;
   border: none;
   color: #3c3b45;
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
   outline: none;
   height: 30px;
   font-size: 16px;

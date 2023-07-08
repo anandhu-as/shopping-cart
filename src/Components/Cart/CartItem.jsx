@@ -11,9 +11,7 @@ import { useAuth } from "../../Auth/Auth";
 const CartItem = ({ cartItems, totalAmount }) => {
   const dispatch = useDispatch();
   const auth = useAuth();
-  const handleLogout = () => {
-    auth.logout();
-  };
+  const handleLogout = () => auth.logout();
   return (
     <>
       <div>
@@ -37,7 +35,9 @@ const CartItem = ({ cartItems, totalAmount }) => {
                 <h4>
                   {item.productName} <br /> quantity: {item.quantity} <br />
                 </h4>
+
                 <br />
+                <p>{item.productdesc}</p>
                 <p>$ {item.price}</p>
                 <button
                   className="dec"
@@ -67,7 +67,7 @@ const CartItem = ({ cartItems, totalAmount }) => {
         ClearCart
       </button>
       <h1>
-        total price $:<span>{totalAmount()} </span>{" "}
+        <span> total price</span> <br /> $: {totalAmount()} {" "}
       </h1>
     </>
   );

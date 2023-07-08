@@ -9,6 +9,7 @@ const NavBar = () => {
   return (
     <div className="navbar">
       {/* Links */}
+
       <Link to="/">
         {" "}
         <h4>
@@ -17,12 +18,12 @@ const NavBar = () => {
       </Link>
       <Link to="/notifications">
         <h4>
-          <i className="fa-solid fa-bell"></i> {productCount}
+          <i className="fa-solid fa-bell"></i> 
         </h4>
       </Link>
       <Link to="/cart">
         <h4>
-          <i className="fa-solid fa-cart-shopping"></i> {productCount}
+        <i className="fa fa-shopping-bag" aria-hidden="true"></i> {productCount}
         </h4>
       </Link>
       {!auth.user && (
