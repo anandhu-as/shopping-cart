@@ -33,3 +33,18 @@
   height: 30px;
   cursor: pointer;
 }
+.avatar {
+  width: 40px;
+  top: 20px;
+  position: fixed;
+  right: 35px;
+  cursor: pointer;
+}
+
+.username {
+  position: fixed;
+  right: 30px;
+  top: 60px;
+  color: #6a658b;
+  font-size: 15px;
+}

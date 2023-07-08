@@ -1,15 +1,17 @@
-import React, { useContext, useState } from "react";
-import { useAuth } from "../../Auth/Auth";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+
 import "../../Styles/Login/Login.css";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { login } from "../../Redux/features/CartSlice";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
-  const [user, setUser] = useState("");
-  const Auth = useAuth();
+  const [name, setUsername] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { username } = useSelector((state) => state.cart.username);
   const handleLogin = () => {
-    Auth.login(user);
-    navigate("/cart");
+    dispatch(login({ username: name }));
+    username && navigate("/cart");
   };
   return (
     <>
@@ -20,17 +22,16 @@ const Login = () => {
       </div>
 
       <div className="login-container">
-        <h1>{Auth.user}</h1>
         <label>
-          username:{" "}
+          username:
           <input
             className="input"
             type="text"
             placeholder="username"
-            onChange={(e) => setUser(e.target.value)}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </label>
-        <button onClick={handleLogin}>Login</button>
+        <button onClick={() => handleLogin()}>Login</button>
       </div>
     </>
   );

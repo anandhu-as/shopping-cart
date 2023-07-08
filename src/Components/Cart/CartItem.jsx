@@ -3,20 +3,18 @@ import {
   clearCart,
   decrement,
   increment,
+  logout,
   removeItem,
 } from "../../Redux/features/CartSlice";
-import { useDispatch } from "react-redux";
-import { useAuth } from "../../Auth/Auth";
-
+import { useDispatch, useSelector } from "react-redux";
 const CartItem = ({ cartItems, totalAmount }) => {
+  const { username } = useSelector((state) => state.cart.username);
   const dispatch = useDispatch();
-  const auth = useAuth();
-  const handleLogout = () => auth.logout();
   return (
     <>
       <div>
-        <h2 className="user">Welcome user: {auth.user}</h2>
-        <button className="logout" onClick={handleLogout}>
+        <h2 className="user">Welcome {username}</h2>
+        <button className="logout" onClick={() => dispatch(logout())}>
           Logut
         </button>
         {cartItems.length == 0 && <h4 className="empty">Cart is Empty</h4>}
@@ -67,7 +65,7 @@ const CartItem = ({ cartItems, totalAmount }) => {
         ClearCart
       </button>
       <h1>
-        <span> total price</span> <br /> $: {totalAmount()} {" "}
+        <span> total price</span> <br /> $: {totalAmount()}{" "}
       </h1>
     </>
   );

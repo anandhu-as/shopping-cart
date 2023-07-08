@@ -6,6 +6,7 @@ const initialState = {
   products: items,
   productCount: 0,
   itemCount: 0,
+  username: { name: "" },
 };
 
 const CartSlice = createSlice({
@@ -44,6 +45,12 @@ const CartSlice = createSlice({
       else state.cartItems.push({ id, quantity: 1 });
       state.productCount = state.cartItems.length;
     },
+    login: (state, action) => {
+      state.username = action.payload;
+    },
+    logout: (state) => {
+      state.username += initialState;
+    },
   },
 });
 
@@ -54,4 +61,6 @@ export const {
   addToCart,
   increment,
   decrement,
+  logout,
+  login,
 } = CartSlice.actions;
