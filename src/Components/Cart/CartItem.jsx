@@ -6,12 +6,21 @@ import {
   removeItem,
 } from "../../Redux/features/CartSlice";
 import { useDispatch } from "react-redux";
+import { useAuth } from "../../Auth/Auth";
 
 const CartItem = ({ cartItems, totalAmount }) => {
   const dispatch = useDispatch();
+  const auth = useAuth();
+  const handleLogout = () => {
+    auth.logout();
+  };
   return (
     <>
       <div>
+        <h2 className="user">Welcome user: {auth.user}</h2>
+        <button className="logout" onClick={handleLogout}>
+          Logut
+        </button>
         {cartItems.length == 0 && <h4 className="empty">Cart is Empty</h4>}
         {cartItems.map((item, id) => {
           return (

@@ -2,7 +2,9 @@ import React from "react";
 import "../../Styles/NavBar/NavBar.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../Auth/Auth";
 const NavBar = () => {
+  const auth = useAuth();
   const { productCount } = useSelector((state) => state.cart);
   return (
     <div className="navbar">
@@ -23,11 +25,13 @@ const NavBar = () => {
           <i className="fa-solid fa-cart-shopping"></i> {productCount}
         </h4>
       </Link>
-      <Link>
-        <h4>
-          <i className="fa-solid fa-user"></i>
-        </h4>
-      </Link>
+      {!auth.user && (
+        <Link to="/login">
+          <h4>
+            <i className="fa-solid fa-user"></i>
+          </h4>
+        </Link>
+      )}
     </div>
   );
 };

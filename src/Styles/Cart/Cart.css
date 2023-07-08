@@ -62,3 +62,16 @@ a {
 .dec {
   font-size: 30px;
 }
+.user{
+  text-align: center;
+}
+.logout{
+  margin-left: 1000px;
+  width: 150px;
+  background-color: rgb(175, 121, 121);
+  border: #fff;
+  cursor: pointer;
+  height: 30px;
+  color: #fff;
+
+}

@@ -11,7 +11,7 @@ export const items = [
   {
     id: 2,
     productName: "DenimJacket",
-    price: 20,
+    price: 18,
     productdesc: "MONTREZ Full Sleeve Men Denim Jacket",
     productImage:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjHYXFdBcJ3cwvdlAjVgzksqjkLeUsc542A&usqp=CAU",
@@ -36,7 +36,7 @@ export const items = [
   {
     id: 5,
     productName: "Men's T-Shirt",
-    price: 19.99,
+    price: 22,
     productImage:
       "https://5.imimg.com/data5/SELLER/Default/2021/10/ZW/ND/GB/140142552/whatsapp-image-2021-10-23-at-4-32-31-pm-1024x1024-500x500.jpg",
   },
